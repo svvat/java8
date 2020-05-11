@@ -13,11 +13,11 @@ public class lambda01 {
         System.out.println("Print using Java7 for loop:");
         // Java7 for loop 
         for (Integer item : intList) {
-            System.out.format("\nValue = %d", item);
+            System.out.format("Value = %d\n", item);
         }
 
         System.out.println("Print using Java8 lambda:");
         // Java 8 lambda
-        intList.forEach(i -> System.out.format("\nValue = %d", i));
+        intList.forEach(i -> System.out.format("Value = %d\n", i));
     }
 }
