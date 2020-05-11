@@ -1,8 +1,8 @@
 // Java program to demonstrate working of Comparator 
 // interface 
 import java.util.*; 
-import java.lang.*; 
-import java.io.*; 
+// import java.lang.*; 
+// import java.io.*; 
   
 // A class to represent a student. 
 class Student 
