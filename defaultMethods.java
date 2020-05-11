@@ -15,7 +15,7 @@ interface Converter {
 
 }
 
-class intefaceDefaultMethods 
+class defaultMethods 
 { 
     public static void main (String[] args) 
     { 

@@ -1,3 +1,8 @@
+/*
+    file: lambda01
+    description: print series of numbers using lambda
+*/
+
 import java.util.ArrayList; 
 
 public class lambda01 {
