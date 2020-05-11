@@ -15,9 +15,14 @@ class mylist extends ArrayList<Integer> {
     private static final long serialVersionUID = 1L;
     
     public double average() {
-      return this.stream().mapToInt(Integer::intValue).average().getAsDouble();
+        return this.stream().mapToInt(Integer::intValue).average().getAsDouble();
     }
-}
+
+    public double percent(Integer i) {
+        int sum = this.stream().mapToInt(Integer::intValue).sum();
+        return i * 100.0  / (double) sum;
+    }
+  }
 
 public class lambda02 {
     public static void main(String[]args) {
@@ -40,5 +45,8 @@ public class lambda02 {
         System.out.format("Java 7 Average = %.2f\n", avg);
 
         System.out.format("Java8 lambda average = %.2f\n:", intList.average());
+
+        System.out.println("Java8 lambda percent;");
+        intList.forEach((i) -> System.out.format("%d => %.0f%% \n", i, intList.percent(i)));
     }
 }
