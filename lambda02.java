@@ -50,3 +50,5 @@ public class lambda02 {
         intList.forEach((i) -> System.out.format("%d => %.0f%% \n", i, intList.percent(i)));
     }
 }
+
+

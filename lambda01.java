@@ -3,17 +3,26 @@
     description: print series of numbers using lambda
 */
 
-import java.util.ArrayList; 
+import java.util.ArrayList;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class lambda01 {
-    public static void main(String[]args) {
+
+    private static ArrayList<Integer> getIntList(int n) {
         // Creating an ArrayList with elements 
         // {1, 2, 3, 4} 
         ArrayList<Integer> intList = new ArrayList<Integer>(); 
-        intList.add(1); 
-        intList.add(2); 
-        intList.add(3); 
-        intList.add(4); 
+        for(int i=0;i<n;i++) {
+            intList.add(i+1); 
+        }
+        return intList; 
+    }
+
+    public static void main(String[]args) {
+        // Creating an ArrayList with elements 
+        // {1, 2, 3, 4} 
+        ArrayList<Integer> intList = getIntList(5);
 
         System.out.println("Print using Java7 for loop:");
         // Java7 for loop 
@@ -25,4 +34,10 @@ public class lambda01 {
         // Java 8 lambda
         intList.forEach(i -> System.out.format("Value = %d\n", i));
     }
+    @Test 
+    public void testPercent() {
+        ArrayList<Integer> intList = getIntList(5);
+        assertEquals(5, intList.size());
+    }
 }
+
