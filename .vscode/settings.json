@@ -2,9 +2,9 @@
     "java.test.config": {
         "name": "myVonfiguration",
         "workingDirectory": "${workspaceFolder}",
-        "args": ["-c": "com.test"], 
+        "args": ["-c", "com.test"], 
         "vmargs": ["-Xmx512M"],
-        "env": {"key": "value"},
+        "env": {"key": "value"}
     },
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
